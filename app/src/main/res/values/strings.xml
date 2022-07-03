@@ -10,4 +10,7 @@
     <string name="CD_teamAway">DescricaoAway</string>
     <string name="cd_home_team">"Imagem time "</string>
     <string name="txt_versus">x</string>
+    <string name="cd_simulate">descricao acessibilidade</string>
+    <string name="cd_away_team">descicao img</string>
+    <string name="erro_api">Unnexpected ERROR</string>
 </resources>

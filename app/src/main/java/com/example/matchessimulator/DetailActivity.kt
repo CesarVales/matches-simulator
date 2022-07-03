@@ -1,15 +1,18 @@
 package com.example.matchessimulator
 
-import android.app.Activity
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.matchessimulator.databinding.ActivityDetailBinding
-import com.example.matchessimulator.databinding.ActivityMainBinding
 
-class detailActivity : AppCompatActivity() {
+class DetailActivity : AppCompatActivity() {
+
+    object Extras {
+        const val MATCH = "EXTRA_MATCH"
+    }
+
     private lateinit var binding: ActivityDetailBinding
-    override fun onCreate(savedInstanceState: Bundle?) {
 
+    override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
         binding = ActivityDetailBinding.inflate(layoutInflater)
@@ -17,5 +20,8 @@ class detailActivity : AppCompatActivity() {
 
         setSupportActionBar(binding.toolbar)
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
+
     }
+
+
 }
